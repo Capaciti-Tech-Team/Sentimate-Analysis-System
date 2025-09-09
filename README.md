@@ -1,6 +1,6 @@
 # Interactive Sentiment Analysis Dashboard
 
-##[🌐 Live Demo](https://b27twzkhwqor.trickle.host) 
+[🌐 View Live Demo](https://b27twzkhwqor.trickle.host) 
 
 ## Overview
 The **Interactive Sentiment Analysis Dashboard** is a modern web-based tool designed to analyze text sentiment in real time. It uses AI-powered sentiment classification to deliver insights, interactive visualizations, and flexible export options. Ideal for businesses, researchers, and developers who need fast and actionable sentiment insights.
@@ -13,8 +13,7 @@ The **Interactive Sentiment Analysis Dashboard** is a modern web-based tool desi
 - **AI Analysis**: Advanced sentiment classification for Positive, Negative, and Neutral sentiments.  
 - **Visualizations**: Interactive pie and bar charts to summarize sentiment distributions.  
 - **Export Options**: Export results as CSV, JSON, or PDF.  
-- **Keyword Extraction**: Highlights sentiment-driving keywords and phrases.  
-- **Responsive Design**: Fully functional on desktop, tablet, and mobile devices.  
+- **Keyword Extraction**: Highlights sentiment-driving keywords and phrases.    
 
 ---
 
@@ -46,17 +45,12 @@ The **Interactive Sentiment Analysis Dashboard** is a modern web-based tool desi
 
 ### Getting Started
 1. Type or paste your text into the **Text Input** box and press **Analyze**.  
-2. Use the following sample texts to test the dashboard’s accuracy and visualizations:
+2. You can use the following sample texts to test the dashboard’s accuracy and visualizations:
    1. "I absolutely love this product! It has changed the way I work."  
    2. "The service was terrible, and I will not be returning."  
    3. "It’s okay, but I expected more features for the price."  
    4. "Fantastic experience! Highly recommend to everyone."  
    5. "I’m disappointed. The app crashes frequently."  
-   6. "Mediocre service, nothing special."  
-   7. "Excellent customer support. Very responsive and helpful!"  
-   8. "Not worth the money. Very frustrating experience."  
-   9. "The user interface is clean and intuitive. I love it!"  
-   10. "Average performance, but some parts are slow and buggy."  
 
 ### Viewing Results
 - **Results Table** displays:
@@ -77,16 +71,4 @@ The **Interactive Sentiment Analysis Dashboard** is a modern web-based tool desi
 ![Dashboard Overview](https://via.placeholder.com/800x400?text=Dashboard+Overview)  
 *Main interface with text input, file upload, and results table.*
 
-### Results Table
-![Results Table](https://via.placeholder.com/800x400?text=Results+Table)  
-*Displays analyzed text, predicted sentiment, confidence scores, and keywords.*
 
-### Visualization Panel
-![Visualization Panel](https://via.placeholder.com/800x400?text=Visualization+Panel)  
-*Interactive pie and bar charts summarizing sentiment distributions.*
-
-### Export Options
-![Export Options](https://via.placeholder.com/800x400?text=Export+Options)  
-*Export analyzed results as CSV, JSON, or PDF.*
-
-> **Note**: Replace the placeholder URLs with actual screenshots when available.

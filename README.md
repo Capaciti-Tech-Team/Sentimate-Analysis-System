@@ -1,7 +1,8 @@
 # Interactive Sentiment Analysis Dashboard
 
--[🌐 View Live Demo](https://b27twzkhwqor.trickle.host) 
--[📖 View User Guide](https://github.com/Capaciti-Tech-Team/Sentimate-Analysis-System/blob/3d67e23aad30a118a054670b264d580474706867/User%20Guide.pdf) 
+- [🌐 View Live Demo](https://b27twzkhwqor.trickle.host)  
+- [📖 View User Guide](https://github.com/Capaciti-Tech-Team/Sentimate-Analysis-System/blob/3d67e23aad30a118a054670b264d580474706867/User%20Guide.pdf)  
+
 
 ## Overview
 The **Interactive Sentiment Analysis Dashboard** is a modern web-based tool designed to analyze text sentiment in real time. It uses AI-powered sentiment classification to deliver insights, interactive visualizations, and flexible export options. Ideal for businesses, researchers, and developers who need fast and actionable sentiment insights.

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Interactive Sentiment Analysis Dashboard</title>
+    <meta name="description" content="Analyze text sentiment with AI-powered tools, visualizations, and export options">
+    <meta name="keywords" content="sentiment analysis, text analysis, AI, machine learning, data visualization">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Interactive Sentiment Analysis Dashboard">
+    <meta property="og:description" content="Analyze text sentiment with AI-powered tools, visualizations, and export options">
+    
+    <!-- Twitter -->
+    <meta name="twitter:title" content="Interactive Sentiment Analysis Dashboard">
+    <meta name="twitter:description" content="Analyze text sentiment with AI-powered tools, visualizations, and export options">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <!-- Predefined Tailwind CSS, use it as needed, or update base on your -->
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary-color: #6366f1;
+            --secondary-color: #f1f5f9;
+            --accent-color: #4338ca;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --danger-color: #ef4444;
+            --neutral-color: #6b7280;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --border-color: #e2e8f0;
+            --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --gradient-success: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+    }
+
+    @layer base {
+        body {
+            @apply text-slate-900 font-sans;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+        }
+        
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+    }
+
+    @layer components {
+        .btn {
+            @apply px-6 py-3 rounded-xl font-semibold transition-all duration-300 flex items-center gap-2 transform hover:scale-105;
+            box-shadow: 0 4px 15px 0 rgba(31, 38, 135, 0.37);
+        }
+        
+        .btn-primary {
+            background: var(--gradient-primary);
+            @apply text-white shadow-lg hover:shadow-xl;
+        }
+        
+        .btn-secondary {
+            @apply bg-white/20 text-slate-700 border border-white/30 hover:bg-white/30 backdrop-blur-sm;
+        }
+        
+        .card {
+            @apply bg-white/80 rounded-2xl shadow-xl border border-white/20 p-8 backdrop-blur-lg;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        }
+        
+        .input-field {
+            @apply w-full px-5 py-4 border border-white/30 rounded-xl focus:ring-2 focus:ring-indigo-400 focus:border-transparent transition-all bg-white/50 backdrop-blur-sm;
+        }
+        
+        .sentiment-positive {
+            @apply text-emerald-700 bg-emerald-100/80 backdrop-blur-sm;
+        }
+        
+        .sentiment-negative {
+            @apply text-red-700 bg-red-100/80 backdrop-blur-sm;
+        }
+        
+        .sentiment-neutral {
+            @apply text-slate-700 bg-slate-100/80 backdrop-blur-sm;
+        }
+        
+        .gradient-text {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .floating-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    }
+
+    @layer utilities {
+        .text-shadow {
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    }
+    </style>
+
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js"></script>
+    <script>const ChartJS = window.Chart;</script>
+    <script>
+      // Global error handler to prevent uncaught errors
+      window.addEventListener('error', function(e) {
+        console.error('Global error caught:', e.error);
+        return true;
+      });
+    </script>
+    
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/ApiStatus.js"></script>
+
+    <script type="text/babel" src="components/BatchTextInput.js"></script>
+    <script type="text/babel" src="components/FileUploadButton.js"></script>
+    <script type="text/babel" src="utils/fileParser.js"></script>
+    <script type="text/babel" src="components/ResultsTable.js"></script>
+    <script type="text/babel" src="components/VisualizationPanel.js"></script>
+    <script type="text/babel" src="components/ComparativeAnalysis.js"></script>
+    <script type="text/babel" src="components/SentimentExplainer.js"></script>
+    <script type="text/babel" src="components/ExportOptions.js"></script>
+    <script type="text/babel" src="utils/sentimentAnalyzer.js"></script>
+    <script type="text/babel" src="utils/keywordExtractor.js"></script>
+    <script type="text/babel" src="utils/errorHandler.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>

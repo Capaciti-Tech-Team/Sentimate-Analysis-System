@@ -1,0 +1,14 @@
+When performing sentiment analysis classification
+- Strictly classify customer reviews into exactly three categories: Positive, Negative, or Neutral
+- Positive sentiment captures satisfaction, praise, approval, and recommendations from customers
+- Recognize satisfaction expressions like "absolutely love", "great customer support", "makes work easier"
+- Positive indicators include: love/loved expressions, praise words, satisfaction statements, recommendations
+- Negative sentiment captures dissatisfaction, complaints, disapproval from customers  
+- Recognize complaint expressions like "crashes constantly", "terrible experience", "waste of money"
+- Negative indicators include: hate expressions, complaint words, problem statements, regret expressions
+- Neutral sentiment is for balanced, factual, or undecided reviews without clear satisfaction/dissatisfaction
+- Recognize balanced expressions like "okay, not great but not terrible", "does what it says, nothing more"
+- Neutral indicators include: balanced statements, factual descriptions, uncertain judgments
+- Pattern matching takes priority over individual word counting for classification accuracy
+- When positive and negative indicators are nearly equal, classify as neutral (balanced review)
+- Use higher confidence scores for clear sentiment patterns and lower for ambiguous cases

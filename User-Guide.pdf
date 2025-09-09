@@ -1,0 +1,29 @@
+## User Guide
+
+### Getting Started
+1. Type or paste your text into the **Text Input** box and press **Analyze**.  
+2. You can use the following sample texts to test the dashboard’s accuracy and visualizations:
+   1. "I absolutely love this product! It has changed the way I work."  
+   2. "The service was terrible, and I will not be returning."  
+   3. "It’s okay, but I expected more features for the price."  
+   4. "Fantastic experience! Highly recommend to everyone."  
+   5. "I’m disappointed. The app crashes frequently."  
+
+### Viewing Results
+- **Results Table** displays:
+  - Original text  
+  - Predicted sentiment  
+  - Confidence score  
+  - Extracted keywords  
+- **Visualization Panel** automatically appears, showing interactive pie and bar charts for sentiment distribution.  
+
+### Exporting Data
+- Export your results via **Export Options** in **CSV**, **JSON**, or **PDF** format for reporting or further analysis.  
+
+---
+
+## Screenshots & Demo
+
+### Dashboard Overview
+![Dashboard Overview](https://via.placeholder.com/800x400?text=Dashboard+Overview)  
+*Main interface with text input, file upload, and results table.*

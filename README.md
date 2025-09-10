@@ -67,10 +67,4 @@ The **Interactive Sentiment Analysis Dashboard** is a modern web-based tool desi
 
 ---
 
-## Screenshots & Demo
-
-### Dashboard Overview
-![Dashboard Overview](https://via.placeholder.com/800x400?text=Dashboard+Overview)  
-*Main interface with text input, file upload, and results table.*
-
 

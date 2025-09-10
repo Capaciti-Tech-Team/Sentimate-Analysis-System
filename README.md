@@ -12,7 +12,7 @@ The **Interactive Sentiment Analysis Dashboard** is a modern web-based tool desi
 ## Features
 - **Text Input**: Analyze individual text entries instantly.  
 - **File Upload**: Process CSV and TXT files in batch.  
-- **AI Analysis**: Advanced sentiment classification for Positive, Negative, and Neutral sentiments.  
+- **AI Analysis**: Advanced sentiment classification for Positive, Negative, and Neutral sentiments.   
 - **Visualizations**: Interactive pie and bar charts to summarize sentiment distributions.  
 - **Export Options**: Export results as CSV, JSON, or PDF.  
 - **Keyword Extraction**: Highlights sentiment-driving keywords and phrases.    
